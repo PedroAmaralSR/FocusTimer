@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+main {
+  width: 82.1rem;
+  height: 33.6rem;
+  display: flex;
+  gap: 18.2rem;
+  margin: 19.2rem auto 0;
+
+  
+}
+
+.hide{
+  display: none;
+}
+
+.controls button{
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+
+  transition: background .6s;
+}
+
+
+
+.controls button:hover{
+  background-color: rgb(131, 131, 131);
+}
+
+
+
+span {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+
+  color: #323238;
+  /* background-color: bisque; */
+}
+
+.clockFunctions {
+  margin-top: 3.5rem;
+}
+
+.controls {
+  margin-top: 4.8rem;
+  display: flex;
+  gap: 4rem;
+  /* background-color: brown; */
+}
+
+.modeSound button{
+  border: none;
+  border-radius: 2.4rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.modeSound button:hover {
+  transform: scale(1.1);
+}
+
+.modeSound svg path+path {
+
+  fill:black;
+}
+.colorButton svg path{
+  fill: #02799D;
+}
+
+.modeSound {
+  display: grid;
+  grid-template-areas: 'forest rain' 'store Fireplace';
+  gap: 3.2rem;
+  /* background-color:blueviolet */
+}
+
+.forest {
+  grid-area: forest;
+}
+.rain {
+  grid-area: rain;
+}
+
+.store {
+  grid-area: store;
+}
+
+.Fireplace {
+  grid-area: Fireplace;
+}
+
+@media (max-width: 925px) {
+  main {
+    width: 90%;
+    height: 33.6rem;
+    display: flex;
+    gap: 12.2rem;
+    margin: 19.2rem auto 0;
+  }
+
+}
+
+@media (max-width: 840px) {
+  main {
+    width: 90%;
+    height: 33.6rem;
+    display: flex;
+    gap: 7.2rem;
+    margin: 19.2rem auto 0;
+  }
+
+}
+
+
+@media (max-width: 805px) {
+  main {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2.2rem;
+    margin:3.2rem auto 3rem;
+  }
+
+  span {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 11.6rem;
+    line-height: 14.8rem;
+  
+    color: #323238;
+    /* background-color: bisque; */
+  }
+
+  .controls {
+    margin-top: 3.8rem;
+    display: flex;
+    gap: 4rem;
+    /* background-color: brown; */
+  }
+
+  .modeSound {
+    display: grid;
+    grid-template-areas: 'forest rain' 'store Fireplace';
+    gap: 4.2rem;
+    /* background-color:blueviolet */
+  }
+
+}
